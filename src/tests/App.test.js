@@ -43,4 +43,11 @@ describe('Teste o componente "<App.js />"', () => {
     userEvent.click(favoritePokemonsLink);
     expect(history.location.pathname).toBe('/favorites');
   });
+
+  test('Teste se ao entrar em uma URL desconhecida redireciona para Not Found', () => {
+    const { history } = renderWithRouter(<App />);
+    history.push('/pokemon');
+    const notFound = screen.getByRole('heading', { level: 2, name: /not found/i });
+    expect(notFound).toBeInTheDocument();
+  });
 });
