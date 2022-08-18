@@ -46,6 +46,7 @@ describe('Teste o componente "<Pokedex.js />"', () => {
     const buttonAll = screen.getByRole('button', { name: /All/i });
     expect(buttonAll).toBeInTheDocument();
     const filterButtons = screen.getAllByTestId(/pokemon-type-button/i);
+
     userEvent.click(filterButtons[1]);
     expect(filterButtons[1]).toHaveTextContent(/Fire/i);
     const fireTexts = screen.getAllByText(/Fire/i);
@@ -72,7 +73,6 @@ describe('Teste o componente "<Pokedex.js />"', () => {
 
   test('Teste se a Pokédex contém um botão para resetar o filtro', () => {
     renderWithRouter(<App />);
-
     const buttonAll = screen.getByRole('button', { name: /All/i });
     expect(buttonAll).toBeInTheDocument();
     expect(buttonAll).toHaveTextContent(/All/i);
