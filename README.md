@@ -15,8 +15,7 @@ Neste projeto foi desenvolvido os testes de um Pokedex.
 - Clone o repositório `git@github.com:Rafael-Souza-97/react-testing-library.git`:
 
 ```bash
-git clone git@github.com:Rafael-Souza-97/react-testing-library
-.git
+git clone git@github.com:Rafael-Souza-97/react-testing-library.git
 ```
 
 <br>
