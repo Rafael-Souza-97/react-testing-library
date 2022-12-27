@@ -2,7 +2,7 @@
 
 Aplicação realizada enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre [React Testing Library - RTL](https://testing-library.com/docs/react-testing-library/intro/).
 
-Neste projeto foi desenvolvido os testes de um Pokedex.
+Neste projeto foi desenvolvido os testes de uma Pokedéx.
 <br>
 
 <details>
